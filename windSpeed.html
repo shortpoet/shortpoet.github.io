@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>Analysis of Data and Scatter Plot of City Latitude vs Humidity</title>
+    <title>Analysis of Data and Scatter Plot of City Latitude vs Wind Speed</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -13,7 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 </head>
-<body id="index">
+<body>
   <header>
     <div class="container">
     <div class="row">
@@ -36,7 +36,7 @@
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle navcolor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Navigation <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li class="active"><a href="index.html">Index <span class="sr-only">(current)</span</a></li>
+                        <li><a href="index.html">Index</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="comparison.html">Comparison</a></li>
                         <li role="separator" class="divider"></li>
@@ -45,7 +45,7 @@
                         <li><a href="temperature.html">Temperature</a></li>
                         <li><a href="humidity.html">Humidity</a></li>
                         <li><a href="cloudiness.html">Cloudiness</a></li>
-                        <li><a href="windSpeed.html">Wind Speed</a></li>
+                        <li class="active"><a href="windSpeed.html">Wind Speed <span class="sr-only">(current)</span></a></li>
                       </ul>
                     </li>
                 </ul>
@@ -54,9 +54,9 @@
                       <a href="#" class="dropdown-toggle navcolor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
                       <ul class="dropdown-menu">                        
                         <li><a href="temperature.html">Temperature</a></li>
-                        <li><a href="humidity.html">Humidity</a></li>
+                        <li><a href="humidity.html">Humidity</li>
                         <li><a href="cloudiness.html">Cloudiness</a></li>
-                        <li><a href="windSpeed.html">Wind Speed</a></li>
+                        <li class="active"><a href="windSpeed.html">Wind Speed <span class="sr-only">(current)</span></a></li>
                       </ul>
                   </li>
                   <li><a class="navcolor" href="comparison.html">Comparison</a></li>
@@ -72,29 +72,30 @@
   <div class="container">
     <div class="all">
       <div class="row">
-        <div class="col-xs-12">
-          <div class="box">
-            <section id="title">
-              <h1>Summary</h1>
-            </section>
-          </div>
+      <div class="col-xs-12">
+        <div class="box">
+          <section id="title">
+            <h1>Wind Speed</h1>
+          </section>
         </div>
+      </div>
       </div>
       <hr>  
       <div class="row">
         <div class="col-sm-12 col-md-8">
           <div class="row">
-            <div class="col-sm-12 text-justify"> <!--https://stackoverflow.com/questions/43226511/how-can-i-center-an-image-in-bootstrap-->
-              <section id="image">                
-                <a href="assets/images/Fig1.png" target="_blank">
-                  <img class="img-responsive" src="assets/images/Fig1.png" alt="Scatter plot of City Latitude vs Temperature"> <!--https://stackoverflow.com/questions/19219951/centering-the-image-in-bootstrap-->
-                </a>                
+            <div class="col-sm-12 text-center"> <!--https://stackoverflow.com/questions/43226511/how-can-i-center-an-image-in-bootstrap-->
+              <section id="image">
+                <h4>Data Plot</h4>
+                <hr>
+                <a href="assets/images/Fig2.png" target="_blank">
+                  <img class="img-responsive center-block" src="assets/images/Fig4.png" alt="Scatter plot of City Latitude vs Humidity"> <!--https://stackoverflow.com/questions/19219951/centering-the-image-in-bootstrap-->
+                </a>
+                <hr class="special">
               </section>
               <section id="analysis">
-                <h4>Methodology and Analysis</h4>
-                <hr>
-                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, I first pulled data from the OpenWeatherMap API to assemble on over 500 cities. These cities were selected at random from a dataset of 547 cities (cities.csv).</p>
-                <p>After assembling the dataset, I used Matplotlib to plot various aspects of City Latitude vs. Weather. Factors I looked at include: temperature, cloudiness, wind speed, and humidity. Additionally, I filtered the data for cities with Low Temperatures yet Low Latitudes with corresponding Overlay Map and dataframe. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed.</p>
+                <h4>Analysis</h4>
+                <p>Just like humidity tends towards the top (100%), wind speeds tend towards the bottom, clustering sround 5mph. However, in northern hemispheres there is a flurry of cities with over 20 mph of wind.</p>
             </section> 
             </div> 
           </div>            
@@ -108,13 +109,12 @@
               <div class="row">
                 <div class="col-xs-6">        
                   <a href="temperature.html">
-                    <img class="img-responsive active" src="assets/images/Fig1.png" alt="Scatter plot of City Latitude vs Temperature in degrees Fahrenheit">
-                    <span class="sr-only">(current)</span>
+                    <img class="img-responsive" src="assets/images/Fig1.png" alt="Scatter plot of City Latitude vs Temperature in degrees Fahrenheit">
                   </a>
                 </div>
                 <div class="col-xs-6">     
                   <a class="active" href="humidity.html">
-                    <img class="img-responsive" src="assets/images/Fig2.png" alt="Scatter plot of City Latitude vs Humidity">                    
+                    <img class="img-responsive" src="assets/images/Fig2.png" alt="Scatter plot of City Latitude vs Humidity">
                   </a>
                 </div>        
                 <div class="col-xs-6">           
@@ -123,8 +123,9 @@
                   </a>
                 </div>
                 <div class="col-xs-6">
-                  <a href="windSpeed.html">
-                    <img class="img-responsive" src="assets/images/Fig4.png" alt="Scatter plot of City Latitude vs Wind Speed">
+                  <a class="active" href="windSpeed.html">
+                    <img class="img-responsive active" src="assets/images/Fig4.png" alt="Scatter plot of City Latitude vs Wind Speed">
+                    <span class="sr-only">(current)</span>
                   </a>
                 </div>
               </div>

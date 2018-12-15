@@ -1,0 +1,242 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    /*body {
+        background-color: silver;
+    }*/
+}
+
+body {
+    background-color: silver;
+    padding: 1% 0% 13% 0%;
+}
+
+.navcolor {
+    background-color: #6EB25A;
+    color: #5A5AB2 !important;
+}
+.navborder {
+    border: #ffab80 1px solid;
+}
+
+.all {
+    color: #6EB25A;
+    background-color: #5A5AB2;
+    border: #ffab80 solid 1px;
+    padding: 3%;
+}
+
+#title {
+    position: relative;
+    right: 17%;
+}
+
+#comparison #title {
+    position: inherit;
+}
+
+#comparison, hr {
+    width: 100%;
+}
+
+h1 {
+    color: #6EB25A;
+    text-align: center;
+    width: auto;
+    vertical-align: middle;
+}
+hr {
+    border-color: #ffab80
+}
+
+hr.specialtest {
+    margin: 0 0px 0 37px;
+    width: 90%;
+}
+
+hr.special {
+    margin: 20px 0px 0px 37px;
+    width: 90%;
+}
+
+.box {
+    color: #6EB25A;
+    background-color: #5A5AB2;
+    /*border: 3px #FFAB80 solid;
+    border-radius: 35%;*/
+    vertical-align: middle;
+    /*width: 500px;*/
+    height: auto;
+    padding: 0% 0%;
+}
+
+#image, h4 {
+    background-color: white;
+    padding: 2% 0% 0% 0%;
+}
+
+#image {
+    border-top: #ffab80 solid 2px;
+    border-left: #ffab80 solid 2px;
+    border-right: #ffab80 solid 2px;
+}
+
+#index #image {
+    float: left;
+    height: 200px;
+    width: 300px;
+    border: 0;
+    padding: 30px 5px 5px 5px;
+}
+
+#index h4 {
+    text-align: right;
+    padding-right: 13.5%;
+}
+
+#index #analysis hr {
+    width: 300px;
+}
+
+#index #analysis {
+    padding: 2% 5%;
+}
+
+#index p {
+    padding: 0 !important;
+    line-height: 200%;
+}
+
+#mainbox {
+    padding: 1% 5%;
+}
+
+#visualizations img:hover {
+    border: #ffab80 2px solid;
+}
+
+nav a:hover {
+    border: #ffab80 2px solid;
+}
+
+#analysis {
+    background-color: white;
+    border-bottom: #ffab80 solid 2px;
+    border-left: #ffab80 solid 2px;
+    border-right: #ffab80 solid 2px;
+}
+
+#temperature #analysis {
+    background-color: white;
+    border-left: #ffab80 solid 2px;
+    border-right: #ffab80 solid 2px;
+    border-bottom: 0 !important;
+}
+
+#analysis, h4 {
+    padding: .5% 0% 0% 0%;
+}
+
+#analysis p {
+    padding: 2% 13% 5% 13%;
+}
+
+#map {
+    background-color: white;
+    border-bottom: #ffab80 solid 2px;
+    border-left: #ffab80 solid 2px;
+    border-right: #ffab80 solid 2px;
+}
+
+#map, h4 {
+    padding: .5% 0% 0% 0%;
+}
+
+#map p {
+    padding: 2% 13% 5% 13%;
+}
+
+#map img {
+    padding: 2%;
+}
+
+#visualizations {
+    background-color: white;
+    padding: 2% 1% 5% 1%;
+}
+
+#visualizations hr {
+    width: 90%;
+}
+
+#image hr {
+    width: 90%;
+}
+
+img.active {
+    border: #5A5AB2 2px solid;
+}
+
+.line {
+    display: inline-block;
+}
+
+.center {
+    align-content: center;
+    justify-content: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-spacing: 5px; /* why won't this apply ? */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.bulletproof {
+    list-style-type: none;
+}
+
+/*body {
+    background-color: silver;
+}*/
+
+/* Pagination links */
+.pagination a {
+    color: #6EB25A;
+    float: left;
+    padding: 21px 211px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: #ffab80 1px solid;
+  }
+  
+  /* Style the active/current link */
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .pagination a:hover:not(.active) {background-color: #ddd;}
