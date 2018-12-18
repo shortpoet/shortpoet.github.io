@@ -30,18 +30,19 @@ body {
     padding: 1% 0% 13% 0%;
 }
 
-.navcolor {
-    background-color: #D9FFCD;
+.navstyle {
+    background-color: #D9FFCD !important;
     color: #6EB25A !important;
+    border: #6EB25A 1.5px solid !important;
 }
-.navborder {
-    border: #5A5AB2 1px solid;
+
+.navcolor {
+    color: #6EB25A !important;
 }
 
 .all {
     color: #D9FFCD;
     background-color: #6EB25A;
-    border: #5A5AB2 solid 1px;
     padding: 3%;
 }
 
@@ -65,7 +66,7 @@ h1 {
     vertical-align: middle;
 }
 hr {
-    border-color: #5A5AB2
+    border-color: #6c7f67
 }
 
 hr.specialtest {
@@ -81,7 +82,7 @@ hr.special {
 .box {
     color: #D9FFCD;
     background-color: #6EB25A;
-    /*border: 3px #5A5AB2 solid;
+    /*border: 3px #6c7f67 solid;
     border-radius: 35%;*/
     vertical-align: middle;
     /*width: 500px;*/
@@ -89,15 +90,19 @@ hr.special {
     padding: 0% 0%;
 }
 
-#image, h4 {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+    background-image: linear-gradient(to bottom,#6c7f67 0, #6c7f67 100%);
+}
+
+#index h4 {
     background-color: #6EB25A;
     padding: 2% 0% 0% 0%;
 }
 
 #image {
-    border-top: #5A5AB2 solid 2px;
-    border-left: #5A5AB2 solid 2px;
-    border-right: #5A5AB2 solid 2px;
+    border-top: #6c7f67 solid 2px;
+    border-left: #6c7f67 solid 2px;
+    border-right: #6c7f67 solid 2px;
 }
 
 #index-image {
@@ -131,28 +136,32 @@ hr.special {
 }
 
 #visualizations img:hover {
-    border: #5A5AB2 2px solid;
+    border: #D9FFCD 2px solid;
+}
+
+#visualizations img {
+    padding: 3%;
 }
 
 nav a:hover {
-    border: #5A5AB2 2px solid;
+    border: #D9FFCD 2px solid;
 }
 
 #analysis {
     background-color: #6EB25A;
-    border-bottom: #5A5AB2 solid 2px;
-    border-left: #5A5AB2 solid 2px;
-    border-right: #5A5AB2 solid 2px;
+    border-bottom: #6c7f67 solid 2px;
+    border-left: #6c7f67 solid 2px;
+    border-right: #6c7f67 solid 2px;
 }
 
 #index #analysis {
-    border: #5A5AB2 solid 2px !important;
+    border: #6c7f67 solid 2px !important;
 }
 
 #temperature #analysis {
     background-color: #6EB25A;
-    border-left: #5A5AB2 solid 2px;
-    border-right: #5A5AB2 solid 2px;
+    border-left: #6c7f67 solid 2px;
+    border-right: #6c7f67 solid 2px;
     border-bottom: 0 !important;
 }
 
@@ -166,9 +175,9 @@ nav a:hover {
 
 #map {
     background-color: #6EB25A;
-    border-bottom: #5A5AB2 solid 2px;
-    border-left: #5A5AB2 solid 2px;
-    border-right: #5A5AB2 solid 2px;
+    border-bottom: #6c7f67 solid 2px;
+    border-left: #6c7f67 solid 2px;
+    border-right: #6c7f67 solid 2px;
 }
 
 #map, h4 {
@@ -197,7 +206,7 @@ nav a:hover {
 }
 
 img.active {
-    border: #6EB25A 2px solid;
+    border: #6c7f67 2px solid;
 }
 
 .line {
@@ -233,14 +242,14 @@ tr:nth-child(even) {
     padding: 21px 211px;
     text-decoration: none;
     transition: background-color .3s;
-    border: #5A5AB2 1px solid;
+    border: #6c7f67 1px solid;
   }
   
   /* Style the active/current link */
   .pagination a.active {
-    background-color: dodgerblue;
+    background-color: #D9FFCD;
     color: #6EB25A;
   }
   
   /* Add a grey background color on mouse-over */
-  .pagination a:hover:not(.active) {background-color: #ddd;}
+  .pagination a:hover:not(.active) {background-color: #6c7f67;}
