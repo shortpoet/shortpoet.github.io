@@ -1,0 +1,91 @@
+
+
+body {
+    background: url("../../assets/images/oak_roots_alpha_17.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+    position: relative;
+    margin: 80px 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.padleft {
+    padding-left: 26px !important;
+}
+
+.padright {
+    padding-right: 26px !important;
+}
+
+#header {
+    padding: 10px 0 35px 0;
+    vertical-align: center;
+}
+
+.nudgeup {
+    top: -13px;
+}
+
+.moveup {
+    top: -111px;
+}
+
+.moveup2 {
+    top: -180px;
+}
+
+#tel {
+    letter-spacing: 2px;
+}
+
+p {
+    text-indent: 26px;
+}
+
+h4 {
+    margin: 35px 0 !important;
+}
+
+a {
+    color: #D9FFCD;
+}
+
+#header-name>h2>a {
+    color: #6EB25A
+}
+
+#header-contact-info>h5>a {
+    color: #6EB25A
+}
+
+.navbar-default {
+    position: fixed !important;
+    bottom: 0 !important;
+    width: 95%;
+    right: 0%;
+    left: 2.5%;
+    margin: 0 !important;
+    opacity: .9;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #D9FFCD !important;
+}
+
+.navstyle {
+    background-color: #A479A4 !important;
+    color: #D9FFCD !important;
+}
+
+.navcolor {
+    color: #D9FFCD !important;
+}
+
+.dropup {
+    opacity: 1;
+}
