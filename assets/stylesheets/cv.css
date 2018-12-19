@@ -1,6 +1,6 @@
 
 body {
-    background: url("assets/images/oak_roots_tie.png");
+    background: url("./../images/oak_roots_tie.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
