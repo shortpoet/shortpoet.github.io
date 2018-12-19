@@ -1,143 +1,240 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Analysis of Data and Scatter Plot of City Latitude vs Humidity</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-
+  <meta charset="utf-8"  />
+  <title>Carlos Soriano CV</title>
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/cv.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/ie10-viewport-bug-workaround.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+  <script src="assets/js/ie10-viewport-bug-workaround.js"></script> <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 </head>
-<body id="index">
+
+
+<body>
   <header>
-    <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <nav class="navbar navbar-default navstyle">
-          <div class="container-fluid navstyle">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand navcolor" href="index.html">Shortpoet</a>
-              </div>              
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">                      
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle navcolor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Navigation <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li class="active"><a href="weather.html">Weather<span class="sr-only">(current)</span</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="comparison.html">Comparison</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="data.html">Data</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="temperature.html">Temperature</a></li>
-                        <li><a href="humidity.html">Humidity</a></li>
-                        <li><a href="cloudiness.html">Cloudiness</a></li>
-                        <li><a href="windSpeed.html">Wind Speed</a></li>
-                      </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">                      
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle navcolor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-                      <ul class="dropdown-menu">                        
-                        <li><a href="temperature.html">Temperature</a></li>
-                        <li><a href="humidity.html">Humidity</a></li>
-                        <li><a href="cloudiness.html">Cloudiness</a></li>
-                        <li><a href="windSpeed.html">Wind Speed</a></li>
-                      </ul>
-                  </li>
-                  <li><a class="navcolor" href="comparison.html">Comparison</a></li>
-                  <li><a class="navcolor" href="data.html">Data</a></li>
-                </ul>
-              </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-    </div>
-  </header>
-  <div class="container">
-    <div class="all">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="box">
-            <section id="title">
-              <h1>Summary</h1>
-            </section>
-          </div>
+    <div class="container-fluid">
+      <div class="row" id="header">
+        <div class="col-md-7">
+          <section id="header-name"> <!-- Header section with name and basic contact info -->
+            <h2>
+              <a href="bio.html">Carlos Alejandro Placido Soriano</a>
+            </h2>
+          </section>
+        </div>
+        <div class="col-md-5">
+          <section id="header-contact-info">
+            <h5>
+		        		<a id="tel" href="tel:+13108808811">1(310)880-8811</a>
+                <br>
+                <br>
+		        		<a href="mailto:soriano.carlitos@gmail.com?Saw%20your%20C.V.%20on%20your%20site">soriano.carlitos@gmail.com</a>
+            </h5>
+          </section>
         </div>
       </div>
-      <hr>  
-      <div class="row">
-        <div class="col-sm-12 col-md-8">
-          <div class="row">
-            <div class="col-sm-12 text-justify"> <!--https://stackoverflow.com/questions/43226511/how-can-i-center-an-image-in-bootstrap-->
-              <section id="index-image">                
-                <a href="assets/images/Fig1.png" target="_blank">
-                  <img class="img-responsive" src="assets/images/Fig1.png" alt="Scatter plot of City Latitude vs Temperature"> <!--https://stackoverflow.com/questions/19219951/centering-the-image-in-bootstrap-->
-                </a>                
-              </section>
-              <section id="analysis">
-                <h4>Methodology and Analysis</h4>
-                <hr>
-                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, I first pulled data from the OpenWeatherMap API to assemble on over 500 cities. These cities were selected at random from a dataset of 547 cities (cities.csv).</p>
-                <p>After assembling the dataset, I used Matplotlib to plot various aspects of City Latitude vs. Weather. Factors I looked at include: temperature, cloudiness, wind speed, and humidity. Additionally, I filtered the data for cities with Low Temperatures yet Low Latitudes with corresponding Overlay Map and dataframe. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed.</p>
-            </section> 
-            </div> 
-          </div>            
-        </div>  
-        <div class="col-sm-12 col-md-4">            
-          <div class="row">
-          <div class="col-sm-12">
-            <section id="visualizations">
-              <h3 class="text-center">Visualizations</h3>
-              <hr>
-              <div class="row">
-                <div class="col-xs-6">        
-                  <a href="temperature.html">
-                    <img class="img-responsive active" src="assets/images/Fig1.png" alt="Scatter plot of City Latitude vs Temperature in degrees Fahrenheit">
-                    <span class="sr-only">(current)</span>
-                  </a>
-                </div>
-                <div class="col-xs-6">     
-                  <a class="active" href="humidity.html">
-                    <img class="img-responsive" src="assets/images/Fig2.png" alt="Scatter plot of City Latitude vs Humidity">                    
-                  </a>
-                </div>
-              </div>
-              <div class="row">        
-                <div class="col-xs-6">           
-                  <a href="cloudiness.html">
-                    <img class="img-responsive" src="assets/images/Fig3.png" alt="Scatter plot of City Latitude vs Cloudiness">                     
-                  </a>
-                </div>
-                <div class="col-xs-6">
-                  <a href="windSpeed.html">
-                    <img class="img-responsive" src="assets/images/Fig4.png" alt="Scatter plot of City Latitude vs Wind Speed">
-                  </a>
-                </div>
-              </div>
-            </section>
-          </div>
-          </div>
-        </div>    
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <section id="mission">
+          <h3>Brand Mission Statement</h3>
+            <p>Language Data Specialist - operate at the intersection of language and data. Driven to analyze and provide insight from data on modes of speech as they reflect human behavior. Through experience across hospitality, sales, and freelance language services, I developed a varied and keen insight into human interaction, motivation, and the sheer nitty-gritty witnessed everywhere from hospitals to courthouses and union halls in between.</p>
+            <p>The call to bridge the gap between analogue expertise with long-dormant digital dexterity came in the form of my brother, freecodecamp, and finally formal training at Washington University St. Louis Data Analytics Boot Camp, gaining essential tech skills such as: Object-Oriented Programming with Python and JavaScript, Relational and Document Databases with MySQL and MongoDB, Plotting and Data Visualization with Pandas and Matplotlib, Web Dev with HTML and PHP. Leveraging these skills for analysis of socio-economic trends across the spectrum of the most widely spoken languages allows my clients a unique perspective on their field of choice.</p>
+        </section>
       </div>
     </div>
   </div>
+  <div id="cv">
+    <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <section id="cv">
+                <h2>C.V.</h2>
+            </div>
+          </div>
+    </div>  
+    <div class="container-fluid">
+          <div class="row">
+          <div class="col-md-12">
+            <section id="languages">
+              <h3>LANGUAGES:</h3> <!-- Languages Section -->
+                <h5>Fluent in English, Spanish, Tagalog</h5>
+                <h5>Very Proficient in Mandarin, French</h5>
+                <h5>Proficient in Italian</h5>
+                <h5>Working Knowledge of German, Portuguese</h5>
+                <h5>Professional in Translation / Interpretation</h5>
+            </section>
+          </div>
+          </div>
+    </div>
+    <div class="container-fluid">
+          <div class="row">
+          <div class="col-md-12">
+            <section id="education">
+              <h3>EDUCATION:</h3> <!-- Education Section -->
+                <h4>University of Pennsylvania</h4>
+                  <p>Bachelor of Arts and Sciences, major in East Asian Languages and Cultures, Chinese Concentration, relevant coursework in linguistics and anthropology</p>     
+                <h4>Peking University</h4>
+                  <p>Intensive language and cultural program on semester abroad, Spring 2003</p>
+                <h4>Thacher School</h4>
+                  <p>Ojai, CA, 1996-2000</p>
+                  <p>Private secondary boarding school, emphasis on academics, the outdoors, camping, horsemanship, and environmental awareness, Year Abroad in France</p>
+            </section>
+          </div>
+          </div>
+    </div>
+    <div class="container-fluid">
+          <div class="row">
+          <div class="col-md-12">
+            <section id="language-work-experience">
+              <h3>LANGUAGE WORK EXPERIENCE</h3> <!-- Language Experience Section -->
+                <h4>Various Interpretation Agencies</h4>
+                  <p>Hanna Interpreting, Carmazzi Global Solutions, Reliable Translations, Laura Salas Interpreting, Cosmo Interpreting, and assorted freelance work</p>
+                  <p>Los Angeles, CA, St. Louis, MO, Freelance: July 2011 – Present</p>
+                  <p>Medical, dental and media conferences, on-site medical and legal interpretation for depositions, insurance and immigration interviews, simultaneous interpretation of contract negotiations, guided tours, consecutive and simultaneous interpretation for training meetings, document translation of many types, including legal, medical, media localization, and various other language-related assignments, primarily in Spanish and Tagalog, some French</p>
+                <h4>GTL Media</h4>
+                  <p>Los Angeles, CA, USA, Freelance: November, December 2011- August 2014</p>
+                  <p>Translator, linguistic tester, translated texts for various media including video games, film, and legal, checked video games for linguistic bugs and translation errors, translation of .xml databases for in-game script</p>
+                <h4>EZI</h4>
+                  <p>Manila, Philippines, January – December 2008</p>
+                  <p>Executive Assistant to the CEO, managed daily operations in a bilingual office setting, supervised staff, attended developmental meetings, tracked and prepared development projects, made calls to and from suppliers and manufacturers, purchased investment property, created investment portfolios and marketing and business plans</p>
+                <h4>Post Haus Restaurant</h4>
+                  <p>St. Moritz, Switzerland, Winter Season 2005 – 2006</p>
+                  <p>Grill Chef de Partie, helped owner plan restaurant concept, designed Grill Station, assisted in menu planning and execution, provided back-end informational support for owners during the length of the season, offering particular assistance interpreting for members of the multi-cultural staff and management</p>
+                <h4>World Eye Reports</h4>
+                  <p>Shanghai, PRC, August – December 2003</p>
+                  <p>Cultural and linguistic liaison, Translator, Interpreter, media Sales, wrote articles and sold ads for advertorial project based out of Shanghai</p>
+            </section>
+          </div>
+          </div>
+    </div>
+    <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <section id="sales-work-experience">
+                <h3>SALES EXPERIENCE</h3> <!-- Sales Experience Section -->
+                  <h4>Toyota of Hollywood</h4>
+                    <p>Los Angeles, CA, USA</p>
+                    <p>Product Specialist - Sales, September 2016 – February 2017</p>
+                    <p>New and Pre-owned Car Sales; Sales made in English, Spanish, Tagalog, French, and Mandarin, Self-directed marketing efforts</p>
+                  <h4>Hollywood Electrics – Electric Cycle Dealership</h4>
+                    <p>Los Angeles, CA, USA</p>  
+                    <p>Part-time Sales Associate, July 2010 – August 2016</p>  
+              </section>
+            </div>
+          </div>
+    </div>
+    <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-12">
+                <section id="hospitality-work-experience">      
+                  <h3>HOSPITALITY EXPERIENCE</h3> <!-- Hospitality Experience Section -->
+                    <h4>DoorDash and Grubhub</h4>
+                      <p>September 2017 - Present</p>  
+                      <p>Food delivery logistics, operating 2 apps at the same time to maximize earnings, while maintaining customer satisfaction and high ratings</p> 
+                    <h4>Winslow's Home</h4>
+                      <p>July - August 2017, St. Louis, MO</p>  
+                      <p>Line Cook, Farm to table restaurant</p> 
+                    <h4>Flying Saucer</h4>
+                      <p>May - July 2017</p>  
+                      <p>Bartender, Craft Beer Bar</p> 
+                    <h4>Larchmont Juicery – Fresh Made Organic Juices, Wellness Drinks, and Frozen Yogurt</h4>
+                      <p>Larchmont Village, Los Angeles, CA,  February 2013-May 2013</p>  
+                      <p>Juice and FroYo Barista, Made and served fresh organic juices, wellness blends, and gourmet frozen yogurt, catering to an upscale clientele, equipment maintenance and flavor control</p> 
+                    <h4>h.wood.tea</h4>
+                      <p>Los Angeles, CA, USA</p>  
+                      <p>Tea Chef, Director, June – December 2009</p> 
+                    <h4>La Paloma Restaurante </h4>
+                      <p>June-July 2004, 2005, Madrid, Spain</p>  
+                      <p>May-July 2002, Madrid, Spain</p>  
+                      <p>Prep Cook, Michelin-Starred Restaurant</p> 
+                    <h4>Guisando Restaurante</h4>
+                      <p>May-July, 2000, 2001, Madrid, Spain</p>  
+                      <p>Line Cook</p>
+                    <h4>Santa Maria Polo Club</h4>
+                      <p>August 1996-2004, 2006, 2007, Sotogrande, Cadiz, Spain</p>  
+                      <p>Promotional specialist and event coordinator for Sotogrande Polo Cup, bar & table service in main sponsor's luxury pavilion</p> 
+                </section>
+              </div>
+          </div>
+    </div>  
+    <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                  <section id="skills"> 
+                    <h3>SKILLS:</h3> <!-- Skills Section -->
+                      <p>Trados, Internet Research, Microsoft Office, Photoshop (Intermediate), YogaWorks 200 hour Yoga Teacher Training, Cicerone Beer Server Certification</p>                      
+                  </section>
+                </div>
+            </div>
+    </div>
+    <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <section id="interests">
+                  <h3>INTERESTS:</h3>  <!-- Interests Section -->
+                    <p>Cooking, organic gardening, yoga, health and fitness, scuba diving, voiceovers, acting</p>
+                </section>
+              </div>
+            </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+          <section id="footer">
+            <div class="row">
+              <div class="col-md-12">
+                <nav class="navbar navbar-default navstyle">
+                  <div class="container-fluid navstyle">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand navcolor" href="index.html">Shortpoet</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">                      
+                        <li class="dropup">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media Links <span class="caret"></span></a>
+                          <ul class="dropdown-menu">                         
+                            <li><a href="bio.html" target="_blank">Bio</a></li>
+                            <li><a href="https://github.com/kreitlerj/Beer-Data-Projectl" target="_blank">Sample Work</a></li>
+                            <li><a href="https://github.com/shortpoet/" target="_blank">Github</a></li>
+                            <li><a href="https://www.linkedin.com/in/carlos-soriano-49aaa97/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://twitter.com/shortpoet3" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/soriano.carlos" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/shortpoet/" target="_blank">Instagram</a></li>
+                          </ul>
+                        </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">                      
+                          <li class="dropup">
+                            <a href="#" class="dropdown-toggle navcolor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
+                            <ul class="dropdown-menu">                        
+                              <li><a href="index.html">City Latitude Weather Data Dashboard</a></li>
+                              <li><a href="https://github.com/kreitlerj/Beer-Data-Project" target="_blank">Beer Data Group Project</a></li>
+                              <li><a href="#" target="_blank">Coming Soon!</a></li>
+                              <li><a href="#" target="_blank">Coming Soon!</a></li>                          
+                            </ul>
+                          </li>
+                          <li class="navcolor"><a href="comparison.html">Weather Comparison</a></li>
+                          <li class="navcolor"><a href="data.html">Weather Data</a></li>
+                      </ul>                   
+                    </div>
+                  </div>
+                </nav>
+              </div>  
+            </div>
+          </section>
+    </div>
+  </footer>
 </body>
 </html>
