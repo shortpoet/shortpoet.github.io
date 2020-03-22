@@ -14,3 +14,5 @@ This is my git page.
 ```
 Resolve-DnsName -Name shortpoet.com
 ```
+
+- jquery or state preventing github pages 
